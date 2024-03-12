@@ -18,11 +18,10 @@ public class MAIN extends javax.swing.JFrame {
     public MAIN() {
         initComponents();
         setTitle("Tiệm ĐỒ Ngọt");
-       
-       
-         setIconImage();
+                setIconImage();
        home.setSVGImage("Image/shop.svg", 90, 90);
         back.setSVGImage("Image/back.svg", 50, 50);
+      
     }
     
      private void setIconImage() {
@@ -49,9 +48,9 @@ public class MAIN extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        mainchinh = new javax.swing.JPanel();
         Title1 = new jPanelGradient();
         jLabel1 = new javax.swing.JLabel();
-        mainchinh = new javax.swing.JPanel();
         Danhmuc = new javax.swing.JPanel();
         back = new GUI.SvgImage1();
         Kmbtn = new javax.swing.JButton();
@@ -64,6 +63,20 @@ public class MAIN extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
+
+        mainchinh.setBackground(new java.awt.Color(255, 255, 255));
+        mainchinh.setPreferredSize(new java.awt.Dimension(760, 470));
+
+        javax.swing.GroupLayout mainchinhLayout = new javax.swing.GroupLayout(mainchinh);
+        mainchinh.setLayout(mainchinhLayout);
+        mainchinhLayout.setHorizontalGroup(
+            mainchinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 740, Short.MAX_VALUE)
+        );
+        mainchinhLayout.setVerticalGroup(
+            mainchinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 597, Short.MAX_VALUE)
+        );
 
         Title1.setPreferredSize(new java.awt.Dimension(0, 30));
 
@@ -83,20 +96,6 @@ public class MAIN extends javax.swing.JFrame {
         Title1Layout.setVerticalGroup(
             Title1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-        );
-
-        mainchinh.setBackground(new java.awt.Color(255, 255, 255));
-        mainchinh.setPreferredSize(new java.awt.Dimension(760, 470));
-
-        javax.swing.GroupLayout mainchinhLayout = new javax.swing.GroupLayout(mainchinh);
-        mainchinh.setLayout(mainchinhLayout);
-        mainchinhLayout.setHorizontalGroup(
-            mainchinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        mainchinhLayout.setVerticalGroup(
-            mainchinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         Danhmuc.setBackground(new java.awt.Color(167, 255, 244));
@@ -142,12 +141,23 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
 
-        Banhangbtn.setBackground(new java.awt.Color(255, 93, 115));
+        Banhangbtn.setBackground(new java.awt.Color(38, 170, 226));
         Banhangbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Banhangbtn.setForeground(new java.awt.Color(255, 255, 255));
         Banhangbtn.setText("Bán Hàng");
         Banhangbtn.setMaximumSize(new java.awt.Dimension(32, 32));
         Banhangbtn.setPreferredSize(new java.awt.Dimension(132, 40));
+        Banhangbtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BanhangbtnMouseEntered(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                BanhangbtnMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                BanhangbtnMouseReleased(evt);
+            }
+        });
         Banhangbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BanhangbtnActionPerformed(evt);
@@ -244,10 +254,12 @@ public class MAIN extends javax.swing.JFrame {
 
     private void KmbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KmbtnActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_KmbtnActionPerformed
 
     private void SanphambtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SanphambtnActionPerformed
         // TODO add your handling code here:
+      
     }//GEN-LAST:event_SanphambtnActionPerformed
 
     private void ThongkebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThongkebtnActionPerformed
@@ -261,6 +273,24 @@ public class MAIN extends javax.swing.JFrame {
     private void Nhanvienbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nhanvienbtn1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Nhanvienbtn1ActionPerformed
+       
+    Color t;
+    private void BanhangbtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BanhangbtnMousePressed
+        // TODO add your handling code here:
+ 
+        t=Banhangbtn.getBackground();
+        Banhangbtn.setBackground(Color.RED);
+        
+    }//GEN-LAST:event_BanhangbtnMousePressed
+
+    private void BanhangbtnMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BanhangbtnMouseReleased
+        Banhangbtn.setBackground(t);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BanhangbtnMouseReleased
+
+    private void BanhangbtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BanhangbtnMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BanhangbtnMouseEntered
 
   
     public static void main(String args[]) {
@@ -272,7 +302,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Banhangbtn;
     private javax.swing.JPanel Danhmuc;
