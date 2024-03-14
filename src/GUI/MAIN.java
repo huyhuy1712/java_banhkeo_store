@@ -285,7 +285,7 @@ public class MAIN extends javax.swing.JFrame {
         mainchinh.revalidate();
         mainchinh.add(new Snpham());
     }//GEN-LAST:event_SanphambtnMouseClicked
-
+    
     private void NhaphangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NhaphangMouseClicked
         // TODO add your handling code here:
         mainchinh.removeAll();
@@ -295,11 +295,8 @@ public class MAIN extends javax.swing.JFrame {
 
     public static void main(String args[]) {
 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MAIN().setVisible(true);
-
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new MAIN().setVisible(true);
         });
     }
 
