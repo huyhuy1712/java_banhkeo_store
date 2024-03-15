@@ -4,6 +4,9 @@
  */
 package GUI;
 
+import java.awt.Frame;
+import javax.swing.JFrame;
+
 /**
  *
  * @author DELL
@@ -130,7 +133,6 @@ public class Snpham extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/visual-merchandising.png"))); // NOI18N
         jLabel1.setText("Sản phẩm");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -219,12 +221,21 @@ public class Snpham extends javax.swing.JPanel {
     private void thanhToan_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_thanhToan_btnMouseClicked
         jScrollPane1.removeAll();
         jScrollPane1.revalidate();
-//        jScrollPane1.add(new Snpham());
+        jScrollPane1.add(new ThanhToan_HoaDon());
 
         // TODO add your handling code here:
     }//GEN-LAST:event_thanhToan_btnMouseClicked
+    public static void main(String[] args) {
+         JFrame j=new JFrame();
+         j.add( new Snpham());
+        j.setVisible(true);
+//        j.setLayout(null);
+        j.setSize(780,600);
+        j.setLocationRelativeTo(null);
+         
+        
+    }
 
-   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFormattedTextField idSP_textF;
     private javax.swing.JLabel jLabel1;

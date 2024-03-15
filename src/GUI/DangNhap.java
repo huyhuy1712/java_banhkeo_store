@@ -4,6 +4,8 @@
  */
 package GUI;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Nguyen Quoc Huy
@@ -236,6 +238,12 @@ public class DangNhap extends javax.swing.JPanel {
     public static void main(String[] args) {
         System.out.println("Hello");
         DangNhap dn=new DangNhap();
+        JFrame j= new JFrame();
+        j.add(dn);
+        j.setVisible(true);
+//        j.setLayout(null);
+        j.setSize(780,600);
+        j.setLocationRelativeTo(null);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPasswordField MK;
