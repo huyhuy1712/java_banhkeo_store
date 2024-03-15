@@ -64,7 +64,6 @@ public class Snpham extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         them_btn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        them_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/carts.png"))); // NOI18N
         them_btn.setText("Thêm");
         them_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +93,6 @@ public class Snpham extends javax.swing.JPanel {
         });
 
         tim_btn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        tim_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/loupe.png"))); // NOI18N
         tim_btn.setText("Tìm");
         tim_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,7 +224,7 @@ public class Snpham extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_thanhToan_btnMouseClicked
 
-
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFormattedTextField idSP_textF;
     private javax.swing.JLabel jLabel1;
