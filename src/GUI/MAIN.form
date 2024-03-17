@@ -39,7 +39,7 @@
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Danhmuc" pref="600" max="32767" attributes="0"/>
-                  <Component id="mainchinh" min="-2" pref="600" max="-2" attributes="0"/>
+                  <Component id="mainchinh" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -167,7 +167,7 @@
                   <Component id="Nhanvienbtn1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="Thongkebtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="68" max="32767" attributes="0"/>
                   <Component id="back" min="-2" pref="55" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>

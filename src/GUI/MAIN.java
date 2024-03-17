@@ -207,7 +207,7 @@ public class MAIN extends javax.swing.JFrame {
                 .addComponent(Nhanvienbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addComponent(Thongkebtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -229,7 +229,7 @@ public class MAIN extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Danhmuc, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
-                    .addComponent(mainchinh, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(mainchinh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         pack();
@@ -257,6 +257,8 @@ public class MAIN extends javax.swing.JFrame {
 
     private void Nhanvienbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nhanvienbtn1ActionPerformed
         // TODO add your handling code here:
+        mainchinh.removeAll();
+        mainchinh.revalidate();
     }//GEN-LAST:event_Nhanvienbtn1ActionPerformed
 
 
@@ -280,7 +282,7 @@ public class MAIN extends javax.swing.JFrame {
         // TODO add your handling code here:
         mainchinh.removeAll();
         mainchinh.revalidate();
-        mainchinh.add(new Snpham());
+        mainchinh.add(new SanPham());
     }//GEN-LAST:event_SanphambtnMouseClicked
 
     private void NhaphangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NhaphangMouseClicked
