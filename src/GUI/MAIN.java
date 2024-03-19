@@ -156,6 +156,11 @@ public class MAIN extends javax.swing.JFrame {
         Nhanvienbtn1.setText("Nhân Viên");
         Nhanvienbtn1.setMaximumSize(new java.awt.Dimension(32, 32));
         Nhanvienbtn1.setPreferredSize(new java.awt.Dimension(132, 40));
+        Nhanvienbtn1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Nhanvienbtn1MouseClicked(evt);
+            }
+        });
         Nhanvienbtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Nhanvienbtn1ActionPerformed(evt);
@@ -291,6 +296,12 @@ public class MAIN extends javax.swing.JFrame {
         mainchinh.revalidate();
         mainchinh.add(new NhapSanpham());
     }//GEN-LAST:event_NhaphangMouseClicked
+
+    private void Nhanvienbtn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Nhanvienbtn1MouseClicked
+        mainchinh.removeAll();
+        mainchinh.revalidate();
+        mainchinh.add(new NhanVien());// TODO add your handling code here:
+    }//GEN-LAST:event_Nhanvienbtn1MouseClicked
 
     public static void main(String args[]) {
 

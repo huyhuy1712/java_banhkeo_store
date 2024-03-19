@@ -5,6 +5,7 @@
 package GUI;
 
 import javax.swing.JFrame;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -31,7 +32,7 @@ public class SanPham extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         Tren = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTable_DSSP = new javax.swing.JTable();
         them_btn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -39,8 +40,8 @@ public class SanPham extends javax.swing.JPanel {
         tim_btn = new javax.swing.JButton();
         idSP_textF = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
-        Duoi = new javax.swing.JPanel();
         xoa_btn = new javax.swing.JButton();
+        Duoi = new javax.swing.JPanel();
         thanhToan_btn = new javax.swing.JButton();
 
         jPanel1.setPreferredSize(new java.awt.Dimension(760, 600));
@@ -49,10 +50,10 @@ public class SanPham extends javax.swing.JPanel {
 
         jScrollPane1.setBorder(null);
 
-        jTable1.setAutoCreateRowSorter(true);
-        jTable1.setBackground(new java.awt.Color(0, 204, 204));
-        jTable1.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTable_DSSP.setAutoCreateRowSorter(true);
+        jTable_DSSP.setBackground(new java.awt.Color(0, 204, 204));
+        jTable_DSSP.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        jTable_DSSP.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -99,7 +100,12 @@ public class SanPham extends javax.swing.JPanel {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jTable_DSSP.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable_DSSPMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTable_DSSP);
 
         them_btn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         them_btn.setText("Thêm");
@@ -138,6 +144,20 @@ public class SanPham extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Sản phẩm");
 
+        xoa_btn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        xoa_btn.setMnemonic('X');
+        xoa_btn.setText("Xóa");
+        xoa_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                xoa_btnMouseClicked(evt);
+            }
+        });
+        xoa_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                xoa_btnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout TrenLayout = new javax.swing.GroupLayout(Tren);
         Tren.setLayout(TrenLayout);
         TrenLayout.setHorizontalGroup(
@@ -161,40 +181,29 @@ public class SanPham extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(soLuong_textF, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(them_btn)))
+                        .addComponent(them_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(xoa_btn)))
                 .addContainerGap(8, Short.MAX_VALUE))
         );
         TrenLayout.setVerticalGroup(
             TrenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TrenLayout.createSequentialGroup()
-                .addContainerGap(13, Short.MAX_VALUE)
+                .addContainerGap(21, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(15, 15, 15)
+                .addGap(10, 10, 10)
                 .addGroup(TrenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(idSP_textF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tim_btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
                     .addComponent(soLuong_textF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(them_btn))
-                .addGap(25, 25, 25)
+                    .addComponent(them_btn)
+                    .addComponent(xoa_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26))
         );
-
-        xoa_btn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        xoa_btn.setMnemonic('X');
-        xoa_btn.setText("Xóa");
-        xoa_btn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                xoa_btnMouseClicked(evt);
-            }
-        });
-        xoa_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                xoa_btnActionPerformed(evt);
-            }
-        });
 
         thanhToan_btn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         thanhToan_btn.setText("Thanh toán");
@@ -215,8 +224,6 @@ public class SanPham extends javax.swing.JPanel {
             DuoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DuoiLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(xoa_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
                 .addComponent(thanhToan_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(70, 70, 70))
         );
@@ -224,9 +231,7 @@ public class SanPham extends javax.swing.JPanel {
             DuoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DuoiLayout.createSequentialGroup()
                 .addContainerGap(61, Short.MAX_VALUE)
-                .addGroup(DuoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(xoa_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(thanhToan_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(thanhToan_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
 
@@ -289,7 +294,12 @@ public class SanPham extends javax.swing.JPanel {
     }//GEN-LAST:event_idSP_textFActionPerformed
 
     private void xoa_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xoa_btnMouseClicked
-        // TODO add your handling code here:
+        int i = jTable_DSSP.getSelectedRow();
+        if (i >= 0) {
+            //thieu 1 dong code xoa trong list sp
+            model.removeRow(i);
+            jTable_DSSP.setModel(model);
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_xoa_btnMouseClicked
 
     private void xoa_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xoa_btnActionPerformed
@@ -332,6 +342,10 @@ public class SanPham extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_thanhToan_btnActionPerformed
 
+    private void jTable_DSSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_DSSPMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable_DSSPMouseClicked
+    DefaultTableModel model = new DefaultTableModel();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Duoi;
@@ -342,7 +356,7 @@ public class SanPham extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable_DSSP;
     private javax.swing.JFormattedTextField soLuong_textF;
     private javax.swing.JButton thanhToan_btn;
     private javax.swing.JButton them_btn;
