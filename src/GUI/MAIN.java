@@ -1,4 +1,4 @@
-52
+
 package GUI;
 
 import static com.github.weisj.jsvg.geometry.util.GeometryUtil.top;
