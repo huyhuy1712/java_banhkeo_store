@@ -109,6 +109,11 @@ public class SanPham extends javax.swing.JPanel {
 
         them_btn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         them_btn.setText("Thêm");
+        them_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                them_btnMouseClicked(evt);
+            }
+        });
         them_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 them_btnActionPerformed(evt);
@@ -345,6 +350,10 @@ public class SanPham extends javax.swing.JPanel {
     private void jTable_DSSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_DSSPMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jTable_DSSPMouseClicked
+
+    private void them_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_them_btnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_them_btnMouseClicked
     DefaultTableModel model = new DefaultTableModel();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
