@@ -17,6 +17,7 @@ public class MAIN_Admin extends javax.swing.JFrame {
 
     public MAIN_Admin() {
         initComponents();
+        
         setTitle("Tiệm ĐỒ Ngọt");
         setIconImage();
         home.setSVGImage("Image/shop.svg", 90, 90);
