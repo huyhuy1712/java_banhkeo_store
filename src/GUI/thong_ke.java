@@ -69,8 +69,8 @@ public class thong_ke extends javax.swing.JPanel {
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel1.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel1.setPreferredSize(new java.awt.Dimension(185, 151));
+        jPanel1.setMinimumSize(new java.awt.Dimension(380, 300));
+        jPanel1.setPreferredSize(new java.awt.Dimension(380, 300));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jPanel5.setBackground(new java.awt.Color(0, 255, 51));
@@ -85,7 +85,7 @@ public class thong_ke extends javax.swing.JPanel {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -93,7 +93,7 @@ public class thong_ke extends javax.swing.JPanel {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(183, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel5, java.awt.BorderLayout.LINE_START);
@@ -112,6 +112,7 @@ public class thong_ke extends javax.swing.JPanel {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Tổng doanh thu");
         jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel6.setPreferredSize(new java.awt.Dimension(380, 300));
         jPanel10.add(jLabel6);
 
         jPanel1.add(jPanel10, java.awt.BorderLayout.CENTER);
@@ -120,8 +121,8 @@ public class thong_ke extends javax.swing.JPanel {
 
         jPanel3.setBackground(new java.awt.Color(0, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel3.setPreferredSize(new java.awt.Dimension(185, 151));
-        jPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        jPanel3.setPreferredSize(new java.awt.Dimension(380, 300));
+        jPanel3.setLayout(null);
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 0));
         jPanel7.setPreferredSize(new java.awt.Dimension(90, 145));
@@ -146,6 +147,7 @@ public class thong_ke extends javax.swing.JPanel {
         );
 
         jPanel3.add(jPanel7);
+        jPanel7.setBounds(0, 0, 90, 145);
 
         jPanel11.setBackground(new java.awt.Color(0, 255, 255));
         jPanel11.setLayout(new java.awt.GridLayout(2, 1));
@@ -164,12 +166,13 @@ public class thong_ke extends javax.swing.JPanel {
         jPanel11.add(jLabel8);
 
         jPanel3.add(jPanel11);
+        jPanel11.setBounds(0, 0, 0, 0);
 
         add(jPanel3);
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 255));
         jPanel2.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel2.setPreferredSize(new java.awt.Dimension(185, 151));
+        jPanel2.setPreferredSize(new java.awt.Dimension(380, 300));
         jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         jPanel8.setBackground(new java.awt.Color(153, 153, 153));
@@ -218,7 +221,7 @@ public class thong_ke extends javax.swing.JPanel {
 
         jPanel4.setBackground(new java.awt.Color(0, 255, 255));
         jPanel4.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel4.setPreferredSize(new java.awt.Dimension(185, 151));
+        jPanel4.setPreferredSize(new java.awt.Dimension(380, 300));
         jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         jPanel9.setBackground(new java.awt.Color(0, 102, 102));
