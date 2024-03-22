@@ -69,123 +69,12 @@ public class thong_ke extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(760, 470));
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-<<<<<<< HEAD
-        jPanel1.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel1.setMinimumSize(new java.awt.Dimension(380, 300));
-        jPanel1.setPreferredSize(new java.awt.Dimension(380, 300));
-        jPanel1.setLayout(new java.awt.BorderLayout());
-
-        jPanel5.setBackground(new java.awt.Color(0, 255, 51));
-        jPanel5.setForeground(new java.awt.Color(0, 255, 255));
-        jPanel5.setPreferredSize(new java.awt.Dimension(90, 90));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/money.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(183, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel5, java.awt.BorderLayout.LINE_START);
-
-        jPanel10.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel10.setLayout(new java.awt.GridLayout(2, 1));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("0$");
-        jLabel5.setToolTipText("");
-        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jPanel10.add(jLabel5);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Tổng doanh thu");
-        jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel6.setPreferredSize(new java.awt.Dimension(380, 300));
-        jPanel10.add(jLabel6);
-
-        jPanel1.add(jPanel10, java.awt.BorderLayout.CENTER);
-
-        add(jPanel1);
-
-        jPanel3.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel3.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel3.setPreferredSize(new java.awt.Dimension(380, 300));
-        jPanel3.setLayout(null);
-
-        jPanel7.setBackground(new java.awt.Color(255, 255, 0));
-        jPanel7.setPreferredSize(new java.awt.Dimension(90, 145));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/box.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-
-        jPanel3.add(jPanel7);
-        jPanel7.setBounds(0, 0, 90, 145);
-
-        jPanel11.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel11.setLayout(new java.awt.GridLayout(2, 1));
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("0");
-        jLabel7.setToolTipText("");
-        jLabel7.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jPanel11.add(jLabel7);
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Tổng sản phẩm");
-        jLabel8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel11.add(jLabel8);
-
-        jPanel3.add(jPanel11);
-        jPanel11.setBounds(0, 0, 0, 0);
-
-        add(jPanel3);
-
-        jPanel2.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel2.setMinimumSize(new java.awt.Dimension(151, 185));
-        jPanel2.setPreferredSize(new java.awt.Dimension(380, 300));
-        jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-
-        jPanel8.setBackground(new java.awt.Color(153, 153, 153));
-=======
         jPanel3.setBackground(new java.awt.Color(0, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(151, 185));
         jPanel3.setPreferredSize(new java.awt.Dimension(360, 300));
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jPanel8.setBackground(new java.awt.Color(0, 255, 51));
->>>>>>> 8cb51bcad7077aa88a2e611e4a92851616e8f22e
         jPanel8.setForeground(new java.awt.Color(0, 255, 255));
         jPanel8.setPreferredSize(new java.awt.Dimension(90, 90));
 
@@ -232,13 +121,8 @@ public class thong_ke extends javax.swing.JPanel {
 
         jPanel4.setBackground(new java.awt.Color(0, 255, 255));
         jPanel4.setMinimumSize(new java.awt.Dimension(151, 185));
-<<<<<<< HEAD
-        jPanel4.setPreferredSize(new java.awt.Dimension(380, 300));
-        jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-=======
         jPanel4.setPreferredSize(new java.awt.Dimension(360, 300));
         jPanel4.setLayout(new java.awt.BorderLayout());
->>>>>>> 8cb51bcad7077aa88a2e611e4a92851616e8f22e
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 0));
         jPanel9.setForeground(new java.awt.Color(0, 255, 255));
