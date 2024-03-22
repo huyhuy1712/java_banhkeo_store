@@ -119,6 +119,11 @@ public class MAIN_Admin extends javax.swing.JFrame {
         Thongkebtn.setMaximumSize(new java.awt.Dimension(132, 32));
         Thongkebtn.setMinimumSize(new java.awt.Dimension(120, 30));
         Thongkebtn.setPreferredSize(new java.awt.Dimension(132, 40));
+        Thongkebtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ThongkebtnMouseClicked(evt);
+            }
+        });
         Thongkebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ThongkebtnActionPerformed(evt);
@@ -301,8 +306,15 @@ public class MAIN_Admin extends javax.swing.JFrame {
     private void Nhanvienbtn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Nhanvienbtn1MouseClicked
         mainchinh.removeAll();
         mainchinh.revalidate();
-        mainchinh.add(new NhanVien());// TODO add your handling code here:
+        mainchinh.add(new QLNV());// TODO add your handling code here:
     }//GEN-LAST:event_Nhanvienbtn1MouseClicked
+
+    private void ThongkebtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ThongkebtnMouseClicked
+        // TODO add your handling code here:
+         mainchinh.removeAll();
+        mainchinh.revalidate();
+        mainchinh.add(new thong_ke());// TODO add your handling code here:
+    }//GEN-LAST:event_ThongkebtnMouseClicked
 
     public static void main(String args[]) {
 

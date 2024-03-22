@@ -33,7 +33,6 @@ public class QLGG extends javax.swing.JPanel {
         jTextArea1 = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         timkiem_form1 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
@@ -69,6 +68,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn6 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -83,8 +83,6 @@ public class QLGG extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Quản lý giảm giá");
         jLabel1.setPreferredSize(new java.awt.Dimension(191, 20));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/coupon.png"))); // NOI18N
 
         timkiem_form1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 204, 204), new java.awt.Color(153, 255, 255))));
 
@@ -102,7 +100,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn2.setBackground(new java.awt.Color(38, 170, 226));
         them_btn2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         them_btn2.setForeground(new java.awt.Color(255, 255, 255));
-        them_btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/search.png"))); // NOI18N
+        them_btn2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/loupe.png"))); // NOI18N
         them_btn2.setText(" Enter");
         them_btn2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         them_btn2.setIconTextGap(2);
@@ -272,7 +270,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn3.setBackground(new java.awt.Color(38, 170, 226));
         them_btn3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         them_btn3.setForeground(new java.awt.Color(255, 255, 255));
-        them_btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/recycle.png"))); // NOI18N
+        them_btn3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/recycle.png"))); // NOI18N
         them_btn3.setText("Reset");
         them_btn3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         them_btn3.setIconTextGap(2);
@@ -288,7 +286,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn4.setBackground(new java.awt.Color(38, 170, 226));
         them_btn4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         them_btn4.setForeground(new java.awt.Color(255, 255, 255));
-        them_btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/delete.png"))); // NOI18N
+        them_btn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/delete.png"))); // NOI18N
         them_btn4.setText(" Xóa");
         them_btn4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         them_btn4.setIconTextGap(2);
@@ -304,7 +302,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn5.setBackground(new java.awt.Color(38, 170, 226));
         them_btn5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         them_btn5.setForeground(new java.awt.Color(255, 255, 255));
-        them_btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pen.png"))); // NOI18N
+        them_btn5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/pen.png"))); // NOI18N
         them_btn5.setText(" Sửa");
         them_btn5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         them_btn5.setIconTextGap(2);
@@ -320,7 +318,7 @@ public class QLGG extends javax.swing.JPanel {
         them_btn6.setBackground(new java.awt.Color(38, 170, 226));
         them_btn6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         them_btn6.setForeground(new java.awt.Color(255, 255, 255));
-        them_btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/add.png"))); // NOI18N
+        them_btn6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/add.png"))); // NOI18N
         them_btn6.setText(" Thêm");
         them_btn6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         them_btn6.setIconTextGap(2);
@@ -343,6 +341,8 @@ public class QLGG extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(jTable1);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/coupon.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -350,9 +350,9 @@ public class QLGG extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(102, 102, 102)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(timkiem_form1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -421,17 +421,17 @@ public class QLGG extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(timkiem_form1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(36, 36, 36))))
+                        .addComponent(timkiem_form1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(62, 62, 62)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(62, 62, 62))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(48, 48, 48)))))
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
